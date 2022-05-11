@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Deserves A Skin?</title>
+    <link rel="stylesheet" href ="index.css">
+    <link rel="stylesheet" href ="reset.css">
+</head>
+<body>
+    <header>
+        <h1 class="header">Which League Champion Deserves A Skin?</h1>
+    </header>
+    <main>
+        <section id="top-champ"></section>
+        <div id="add-buttons">
+            <div class="button-border" id="add-skin-border">
+                <button class="top-btn" id="add-skin-btn">Add Skin</button>
+            </div>
+            <div class="button-border" id="add-champ-border">
+                <button class="top-btn" id="add-champ-btn">Add Champion</button>
+            </div>
+            </div>
+        </section>
+        <section class="champ-list" id="champ-list">
+
+        </section>
+        
+        <div hidden class="add-form" id="add-skin-container">
+            <div class="form-border">
+            <form id="add-skin-form">
+                    <button class="exit" id="exit-skin">x</button>
+                    <label for="champ-select">Champion:</label>
+                    <select id="champ-select"></select>
+                    <label for="skin-release">Release Date:</label>
+                    <input type="date" id="skin-release">
+                    <button class="form-btn" id="submit-skin-btn">Add Skin</button>
+                </form>
+            </div>
+        </div>
+        
+
+       
+            <div hidden class="add-form" id="add-champ-container">
+            <div class="form-border">
+               
+                <form id="add-champ-form">
+                   
+                    <button class="exit" id="exit-champ">x</button>
+                    <label for="champ-add">New Champion Name</label>
+                    <input type="text" id="champ-add">
+                    <label for="champ-release">Release Date:</label>
+                    <input type="date" id="champ-release">
+                    <label for="skin-number">How many skins was this champion released with?</label>
+                    <input type="number" id="skin-number">
+                    <label for="pic-link">Portrait URL:</label>
+                    <input type="text" id="pic-link">
+                    <button class="form-btn" id="submit-champ-btn">Add Champion</button>
+                </form>
+            </div>
+            </div>
+            <a name="section1"></a>
+        
+    </main>
+    <footer>
+        <div class="footer-btns">
+            <a href="#top">&#8593;</a>
+        </div>
+        <div class="footer-btns">
+            <a href="#section1">&#8595;</a>
+        </div>
+        
+    </footer>
+   <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
